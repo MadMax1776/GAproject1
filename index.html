@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-      <script src="https://code.jquery.com/jquery-3.4.1.min.js" charset="utf-8" defer></script>
-      <script src="app.js" charset="utf-8" defer></script>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" charset="utf-8" defer></script>
 
-  </head>
-  <body>
-    <h1>Movie Info</h1>
-    <dl>
-    	<dt>Title</dt>
-    	<dd id="title"></dd>
+  <!-- Add the gapi client script to access Google APIs-->
+  <!-- <script src="https://apis.google.com/js/api.js"></script> -->
 
-    	<dt>Year</dt>
-    	<dd id="year"></dd>
+  <script src="app.js" charset="utf-8" defer></script>
+  <link rel="stylesheet" type"text/css" href="main.css">
 
-    	<dt>Rating</dt>
-    	<dd id="rated"></dd>
-    </dl>
+</head>
+<body>
+  <h1>Movie Info</h1>
+  <dl>
+    <dt>Title</dt>
+    <dd id="title"></dd>
 
-    <form>
-    	<input type="text" placeholder="movie title"/>
-    	<input type="submit" value="Get Movie Info" />
-    </form>
+    <dt>Year</dt>
+    <dd id="year"></dd>
 
-  </body>
+    <dt>Rating</dt>
+    <dd id="rated"></dd>
+  </dl>
+
+  <form>
+    <input id="book-title" type="text" placeholder="Book title"/>
+    <input id="book-info" onClick="handleGetBook()" type="submit" value="Get Book Info" />
+  </form>
+
+</body>
 </html>
