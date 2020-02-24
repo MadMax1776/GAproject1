@@ -1,3 +1,11 @@
+
+
+
+
+
+
+
+
 $(() => {
 
   // Referenced API URL: https://developers.google.com/books/docs/v1/using#PerformingSearch
@@ -7,12 +15,8 @@ $(() => {
     // TLDR; only neccessary if something above is listening to the (default-)event too
     e.preventDefault();
 
-    // let xhttp = new XMLHttpRequest();
+    let xhttp = new XMLHttpRequest();
     // Referenced URL: https://www.w3schools.com/js/js_json_http.asp
-
-$.ajax ({"https://www.googleapis.com/books/v1/volumes?q=" + searchString
-
-}).then(
 
     let searchString = $('#book-title').val();
     console.log('The searched string is:', searchString);
@@ -21,10 +25,7 @@ $.ajax ({"https://www.googleapis.com/books/v1/volumes?q=" + searchString
     console.log('Created request');
     xhttp.send();
     console.log('Headers received');
-
-
-
-    data.onload = (e) => {
+    xhttp.onload = (e) => {
       // Using JSON
       const response = JSON.parse(e.target.response);
       console.log(response);
@@ -41,7 +42,8 @@ $.ajax ({"https://www.googleapis.com/books/v1/volumes?q=" + searchString
         $('#results').append('<br/>')
         $('#results').append('<br/>')
       }
-    })
+    }
+  })
 });
 
 
@@ -53,8 +55,9 @@ $.ajax ({"https://www.googleapis.com/books/v1/volumes?q=" + searchString
 
 
 
-
 ////============================================================================
+///spare safety code in case I break something and can't fix
+//////=========================================================================
 // $(() => {
 //
 //   // Referenced API URL: https://developers.google.com/books/docs/v1/using#PerformingSearch
@@ -94,3 +97,4 @@ $.ajax ({"https://www.googleapis.com/books/v1/volumes?q=" + searchString
 //     }
 //   })
 // });
+////==========================================================================
