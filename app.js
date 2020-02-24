@@ -1,5 +1,7 @@
 $(() => {
 
+  // Referenced API URL: https://developers.google.com/books/docs/v1/using#PerformingSearch
+
   $("#book-info").click(function(e) {
     // Referenced URL: https://stackoverflow.com/questions/27759380/how-to-stop-refreshing-page-after-ajax-call/40650166
     // TLDR; only neccessary if something above is listening to the (default-)event too
@@ -7,14 +9,6 @@ $(() => {
 
     let xhttp = new XMLHttpRequest();
     // Referenced URL: https://www.w3schools.com/js/js_json_http.asp
-    xhttp.onreadystatechange = function() {
-      console.log('ReadyState change...');
-
-      if ((this.readystate === 4) && (this.status === 200)) {
-        let response = this.responseJSON;
-        console.log('Test');
-        }
-    };
 
     let searchString = $('#book-title').val();
     console.log('The searched string is:', searchString);
@@ -35,6 +29,10 @@ $(() => {
         $('#results').append('<dt>Published Date:</dt>' + '<dd id="Published Date">' + response.items[i].volumeInfo.publishedDate + '</dd>');
         $('#results').append('<dt>Description:</dt>' + '<dd id="Description">' + response.items[i].volumeInfo.description + '</dd>');
         $('#results').append('<dt>Avg. Rating:</dt>' + '<dd id="Avg. Rating">' + response.items[i].volumeInfo.averageRating + '</dd>');
+        $('#results').append('<br/>')
+        $('#results').append('<br/>')
+        $('#results').append('<br/>')
+        $('#results').append('<br/>')
       }
     }
   })
