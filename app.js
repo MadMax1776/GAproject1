@@ -7,8 +7,12 @@ $(() => {
     // TLDR; only neccessary if something above is listening to the (default-)event too
     e.preventDefault();
 
-    let xhttp = new XMLHttpRequest();
+    // let xhttp = new XMLHttpRequest();
     // Referenced URL: https://www.w3schools.com/js/js_json_http.asp
+
+$.ajax ({"https://www.googleapis.com/books/v1/volumes?q=" + searchString
+
+}).then(
 
     let searchString = $('#book-title').val();
     console.log('The searched string is:', searchString);
@@ -17,7 +21,10 @@ $(() => {
     console.log('Created request');
     xhttp.send();
     console.log('Headers received');
-    xhttp.onload = (e) => {
+
+
+
+    data.onload = (e) => {
       // Using JSON
       const response = JSON.parse(e.target.response);
       console.log(response);
@@ -34,9 +41,9 @@ $(() => {
         $('#results').append('<br/>')
         $('#results').append('<br/>')
       }
-    }
-  })
+    })
 });
+
 
 
 
