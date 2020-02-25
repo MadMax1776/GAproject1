@@ -5,22 +5,54 @@
   <title></title>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" charset="utf-8" defer></script>
 
-  <!-- Add the gapi client script to access Google APIs-->
-  <!-- <script src="https://apis.google.com/js/api.js"></script> -->
+  <!-- <Add the gapi client script to access Google APIs-->
+  <script src="https://apis.google.com/js/api.js"></script>
 
   <script src="app.js" charset="utf-8" defer></script>
   <link rel="stylesheet" type"text/css" href="main.css">
 
 </head>
 <body>
+  <h1>Booky</h1>
+<!-- =========== CAROUSEL CONTAINER ======== -->
+
+<div class = "carousel-container">
+  <!-- previous button -->
+  <div class="carousel-button previous">
+    <!--  -->
+    <span class="lnr lnr-chevron-left"></span>
+  </div>
+
+<!-- images -->
+  <div class="book-images">
+    <img src="images/libraryAmsterdam.jpg" alt="Library in Amsterdam">
+    <img src="images/russia.jpg" alt="Russia">
+  </div>
+  <!-- next button -->
+  <div class="carousel-button next">
+  <!--  -->
+    <span class="lnr lnr-chevron-right"></span>
+  </div>
+</div>
+
+
+
+<!-- ==========end of container/start of search stuff================== -->
+ <div class = "searchResults">
   <h1>Book Info</h1>
-  <dl id="results">
-  </dl>
+
 
   <form>
     <input id="book-title" type="text" placeholder="Book title"/>
     <input id="book-info" type="submit" value="Get Book Info" />
   </form>
+
+  <dl id="results">
+  </dl>
+ </div>
+
+
+
 
 </body>
 </html>

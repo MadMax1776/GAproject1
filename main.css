@@ -2,3 +2,54 @@ body {
   color: #ffffff;
   background-color: #333333;
 }
+
+h1 {
+  text-align: center;
+}
+
+
+
+/* .searchResults {
+  display: flex;
+  height: 2000px;
+  width: 50%;
+} */
+
+/* ======================================================================== */
+.carousel-container {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+}
+
+.book-images {
+  width: 80%;
+  background: #a50000;
+  padding: 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px #38383838;
+}
+
+.book-images img {
+  width: 100%;
+  border-radius: 10px;
+  display: none;
+  height: 700px;
+}
+
+.carousel-button {
+  align-self: center;
+  background: #f2cd99;
+  color: #888;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 1px 1px #fa8d8e;
+}
+
+
+/* ======================================================================== */
+.searchResults > h1 {
+  text-align: left;
+}
