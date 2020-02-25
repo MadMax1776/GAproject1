@@ -1,11 +1,51 @@
 
+$((() => {
+
+  let currentImgIndex = 0;
+  let hightestIndex = 2;
+
+  $('.next').on('click', () => {
+   const $img = $('.book-images')
+     .children()
+     .eq(currentImgIndex)
+
+   $img.css('display', 'none')
+   currentImgIndex++;
+
+   if (currentImgIndex > hightestIndex) {
+     currentImgIndex=0;
+   }
+
+   const $img2 = $('.book-images')
+   .children()
+   .eq(currentImgIndex)
+
+    $img2.css('display', 'block')
+    });
+
+    $('.previous').on('click', () => {
+      const $img = $('.book-images')
+      .children()
+      .eq(currentImgIndex);
+
+      $img.css('display', 'none')
+
+      currentImgIndex--;
+
+      if (currentImgIndex < 0) {
+        currentImgIndex = hightestIndex;
+      }
+
+      const $img2 = $('.book-images')
+      .children()
+      .eq(currentImgIndex)
+     $img2.css('display', 'block')
+       });
 
 
+}));
 
-
-
-
-
+//////=============Start of API code AJAX XMLHttp=====================================
 $(() => {
 
   // Referenced API URL: https://developers.google.com/books/docs/v1/using#PerformingSearch
