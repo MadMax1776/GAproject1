@@ -2,7 +2,7 @@
 $((() => {
 
   let currentImgIndex = 0;
-  let hightestIndex = 2;
+  let hightestIndex = 4;
 
   $('.next').on('click', () => {
    const $img = $('.book-images')
