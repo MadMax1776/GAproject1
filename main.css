@@ -5,6 +5,12 @@ body {
   background-size: cover;
 }
 
+/* @media screen and (max-width: 700px){
+  body.background-image {
+    display: none;
+  }
+} */
+
 h1 {
   text-align: center;
 }
@@ -18,16 +24,25 @@ h1 {
 } */
 
 /* ======================================================================== */
-.carousel-container {
+
+.container {
   display: flex;
-  width: 70%;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
 }
 
+.carousel-container {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  justify-content: space-between;
+
+}
+
 .book-images {
+  display: flex;
   width: 80%;
-  background: #a50000;
+  background: #000000;
   padding: 10px;
   border-radius: 10px;
   box-sizing: border-box;
@@ -36,10 +51,12 @@ h1 {
 }
 
 .book-images img {
+  display: flex;
+  align-items: center;
   width: 100%;
   border-radius: 10px;
   display: none;
-  height: 600px;
+  height: 650px;
 }
 
 .book-images img:first-of-type {
@@ -48,12 +65,15 @@ h1 {
 
 .carousel-button {
   align-self: center;
-  background: #445626;
+  background: #000000;
   color: #888;
   padding: 10px;
   border-radius: 50%;
   text-align: center;
   box-shadow: 1px 1px #a50000;
+  width: 30px;
+  height: 30px;
+  font-size: 1.50em;
 }
 
 .carousel-button:hover {
@@ -95,4 +115,8 @@ h1 {
   border: grey;
   margin: 20px;
 
+}
+
+.results > dd {
+  color: black;
 }
