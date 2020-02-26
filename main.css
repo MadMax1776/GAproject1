@@ -1,6 +1,8 @@
 body {
   color: #ffffff;
-  background-color: #969696;
+  /* background-color: #969696; */
+  background-image:url(images/libraryBackground.jpg);
+  background-size: cover;
 }
 
 h1 {
@@ -64,14 +66,33 @@ h1 {
 /* ======================================================================== */
 .searchResults > h1 {
   text-align: left;
-
+  font-size: 2.75em;
+  font-style: normal;
+  font-family: "Times New Roman", Times, sans-serif;
 }
 
 .searchResults > form {
   text-align: left;
 }
 
-.searchResults > input{
+.input[type=text] {
+  width: 100%;
+}
+
+.searchResults > form > input[type=text] {
   font-size: 20px;
-  background-color: blue;
+  background-color: black;
+  color: white;
+  border: grey;
+  margin: 20px;
+  height: 30px;
+}
+
+.searchResults > form > input[type=submit] {
+  background-color: black;
+  height: 30px;
+  color: white;
+  border: grey;
+  margin: 20px;
+
 }
