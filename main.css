@@ -9,11 +9,11 @@ body {
 }
 
 }
-@media screen and (max-width: 700px){
+/* @media screen and (max-width: 700px){
   body.background-image {
     display: none;
   }
-}
+} */
 
 h1 {
   text-align: center;
