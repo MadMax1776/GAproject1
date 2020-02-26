@@ -42,7 +42,7 @@ $((() => {
      $img2.css('display', 'block')
        });
 
-//test
+
 }));
 
 //////=============Start of API code AJAX XMLHttp=====================================
