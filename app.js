@@ -78,13 +78,20 @@ $(() => {
         $('#results').append('<dt>Description:</dt>' + '<dd id="Description">' + response.items[i].volumeInfo.description + '</dd>');
         $('#results').append('<dt>Avg. Rating:</dt>' + '<dd id="Avg. Rating">' + response.items[i].volumeInfo.averageRating + '</dd>');
         $('#results').append('<br/>')
+        ////these don't actually work, it displays 10 results in an array same as the google books website
         $('#results').append('<br/>')
         $('#results').append('<br/>')
         $('#results').append('<br/>')
 
+        // $('#results').empty('<dt/>')
+        // $('#results').empty('<dd/>')
+
+
+
       }
     }
   })
+
 });
 
 
