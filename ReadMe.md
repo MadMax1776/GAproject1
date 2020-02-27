@@ -2,11 +2,17 @@
 
 
 
-/////////===========Book Carousel======================================
+/////////===============BOOKY==================/////////////////
+https://madmax1776.github.io/
 
-This is a test for the name change.
+Carousel======================================
 
-//////////=============Google API======================================
+The carousel with the picture went pretty smoothly for me. I built it by watching the class lecture we did on the dog carousel and following along with the lecture. I played around with a lot of different sizing for my images (not all of them have the same pixelation) as well as different border colors. I chose the forward and backwards buttons size by what would approximate finger-tip size on the tablet version. The hardest part of the carousel for me was getting the thing to run through all of the pictures without collapsing after the last one. I fixed this problem by increasing the hightestIndex value to 4. I chose the picture in the carousel based on books that I have read and liked and one book that I want to read.
+
+////CSS/Layout=================================================
+I set up most of my CSS so that it would pair nicely with my background image. I didn't struggle that much with the CSS except for some of the data types that were two levels down, I spent a lot of time figuring out how to reach those. The only thing I don't like about the css overall is that my background image makes the search results kinda hard to read. Other than that, I really like the way it looks. It's simple and the background image is awesome.
+
+//////////=============Google API===================================
 Getting the google APIs to work was by far the most frustrating part of this
 project for me. I started out testing all of the API manually through the
 web browser/html/javascript file which was pretty time consuming. I was nervous I was going to have to scrap my project theme and do something else besides google books but while surveying google's exhaustive information about their APIs, I found some code that linked to a Harry Potter book. I copied and pasted that into my test file and it actually pulled data. This was late Saturday evening. On Sunday, I registered my API key with them and attempted to use my API key at the end of the url like their instructions suggested to pull the data I was wanting. It wasn't working so  I later found a great API testing tool called postman and used that to ensure my google books
