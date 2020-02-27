@@ -1,6 +1,6 @@
 
-@media only screen and (min-width: 650px){
-
+@media only screen and (min-width: 700px){
+/* max-height: 1000px */
 body {
   color: #ffffff;
   /* background-color: #969696; */
@@ -107,7 +107,7 @@ h1 {
   width: 100%;
 }
 
-.searchResults > form > input[type=text] {
+.formInfo > form > input[type=text] {
   font-size: 20px;
   background-color: black;
   color: white;
@@ -116,15 +116,37 @@ h1 {
   height: 30px;
 }
 
-.searchResults > form > input[type=submit] {
+.formInfo > form > input[type=submit] {
   background-color: black;
   height: 30px;
   color: white;
   border: grey;
   margin: 20px;
+  width: 110px;
+  font-size: 15px;
 
 }
 
-.results > dd {
-  color: black;
+.searchResults > dl > dd {
+  color: white;
+  font-size: 2em;
+}
+
+.searchResults > dl > dt {
+  color: white;
+  font-size: 2.1em;
+}
+
+
+.searchResults > button {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  margin: 20px;
+  height: 30px;
+  width: 20%;
+  font-size: 15px;
+
 }
