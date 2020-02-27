@@ -72,7 +72,7 @@ $(() => {
       // Use JSON and loop through counted items
       for (let i =0; i < response.items.length; i++) {
         $('#results').append('<dt>Title:</dt>' + '<dd id="Title">' + response.items[i].volumeInfo.title + '</dd>');
-        $('#results').append('<dt>Author:</dt>' + '<dd id="Author">' + response.items[i].volumeInfo.authors[0] + '</dd>');
+        $('#results').append('<dt>Author:</dt>' + '<dd id="Author">' + response.items[i].volumeInfo.authors + '</dd>');
         $('#results').append('<dt>Publisher:</dt>' + '<dd id="Publisher">' + response.items[i].volumeInfo.publisher + '</dd>');
         $('#results').append('<dt>Published Date:</dt>' + '<dd id="Published Date">' + response.items[i].volumeInfo.publishedDate + '</dd>');
         $('#results').append('<dt>Description:</dt>' + '<dd id="Description">' + response.items[i].volumeInfo.description + '</dd>');
@@ -94,9 +94,13 @@ $(() => {
 
 });
 
+////=================Empty Button==================================
 
 
-
+$("#EmptyButton").click(function()
+{
+  $('#results').empty();
+});
 
 
 
